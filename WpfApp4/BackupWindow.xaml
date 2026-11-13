@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp4.BackupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Резервное копирование" Height="300" Width="500" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <TextBlock Text="Создайте копию базы данных или восстонавите из файла:"
+                   Margin="0,0,0,15"/>
+        <Button Content="Сделать резервную копию" Height="35" Margin="0,0,0,10" Click="Backup_Click"/>
+        <Button Content="Восстановить из копии" Height="35" Click="Restore_Click"/>
+    </StackPanel>
+</Window>
